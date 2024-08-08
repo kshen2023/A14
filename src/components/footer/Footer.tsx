@@ -6,11 +6,11 @@ const FooterStyled = styled.footer`
   text-align: center;
   font-size: 12px;
   color: white; 
-  background-color: rgb(13, 13, 13);
+ background-color: rgb(90, 164, 171);
   padding: 10px;
 
   a {
-    color: rgb(5, 151, 248);
+    color: rgb(0, 0, 0);
     font-size: 20px;
     padding: 10px;
     text-decoration: none;

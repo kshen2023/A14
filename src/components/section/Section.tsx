@@ -5,52 +5,49 @@ import design2 from '../../assets/design2.jpg';
 import design3 from '../../assets/design3.jpg';
 
 const SectionStyled = styled.section`
-  background-color: #000;  /* Use hex code for consistency */
-  background-size: cover;
-  background-position: center;
-  color: #fff;  /* Use hex code for consistency */
-  padding: 40px 20px;  /* Increased top and bottom padding for better spacing */
+ background-color: rgb(90, 164, 171);
+  color: #f1f1f1;  /* Softer white for text */
+  padding: 40px 20px;
   text-align: center;
 
   h2 {
-    font-size: 4rem;  /* Use rem for better scalability */
-    text-transform: capitalize;
-    margin-top: 30px;
-    margin-bottom: 20px;  /* Added bottom margin for spacing */
-    font-weight: 700;  /* Make the font bold */
+    font-size: 2rem;  /* Reduced font size */
+    text-transform: uppercase;  /* Uppercase for a modern look */
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: 600;  /* Slightly lighter font weight */
   }
 
   p {
-    font-size: 1.5rem;  /* Use rem for better scalability */
-    width: 70%;
+    font-size: 1.125rem;  /* Reduced font size */
+    width: 80%;
     margin: auto;
     font-weight: 300;
-    line-height: 1.6;  /* Increase line height for better readability */
-    margin-bottom: 40px;  /* Adjusted bottom margin for consistency */
+    line-height: 1.6;
+    margin-bottom: 30px;  /* Adjusted bottom margin */
   }
 
   .image-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    gap: 10px;  /* Use gap for better spacing management */
+    gap: 10px;
     margin: 20px 0;
   }
 
   .image-container img {
     width: calc(33.33% - 10px);
     margin-bottom: 10px;
-    border-radius: 10px;  /* Increased border-radius for a smoother look */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);  /* Subtle shadow for better depth */
-    transition: transform 0.3s ease, box-shadow 0.3s ease;  /* Smooth transition */
+    border-radius: 8px;  /* Slightly reduced border-radius */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);  /* More prominent shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
 
   .image-container img:hover {
-    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.5), 0 8px 30px rgba(255, 255, 255, 0.5);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);  /* Darker shadow on hover */
     transform: scale(1.05);
   }
 `;
-
 
 type SectionProps = {
   children?: React.ReactNode;

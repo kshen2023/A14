@@ -4,48 +4,62 @@ import styled from 'styled-components';
 
 const NavbarStyled = styled.nav`
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  background-color: rgb(28, 27, 27);
-  padding: 10px;
-  border-top: 2px solid white;
-  border-bottom: 2px solid white;
-  position: relative; /* Position relative for the current page text */
+ background-color: rgb(90, 164, 171);
+  padding: 15px 30px;
+  
+  position: relative;
 
   ul {
-    list-style-type: none;
-    padding: 0;
+    list-style: none;
     display: flex;
-    justify-content: center;
-    width: 100%;
+    gap: 30px; /* Increased gap for spacing */
+    margin: 0;
+    padding: 0;
   }
 
   li {
-    transition: background-color 0.3s, border-radius 0.3s;
-    color: blue;
-    font-size: 18px;
-    padding: 0 20px;
+    font-size: 16px;
+    font-weight: 500;
+    position: relative;
+    transition: transform 0.3s ease; /* Smooth transform transition */
   }
 
   a {
-    color: white;
+    color: #f5f5f5; /* Softer white for links */
     text-decoration: none;
+    position: relative;
+    padding: 5px 0;
+    transition: color 0.3s ease; /* Smooth color transition */
+  }
+
+  a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #f5f5f5;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease;
+  }
+
+  a:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
   }
 
   li:hover {
-    background-color: #3498db;
-    border-radius: 5px;
-    border: 1px solid #2980b9;
+    transform: translateY(-3px); /* Slight lift on hover */
   }
 
   .current-page {
-    position: absolute;
-    right: 20px;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 16px;
-    color: white;
-    background-color: rgba(0, 0, 0, 0.5);
+    font-size: 14px;
+    color: #f5f5f5;
+    background-color: #333;
     padding: 5px 10px;
     border-radius: 5px;
   }
@@ -59,6 +73,7 @@ const Navbar: React.FC = () => {
         <li><Link to="/about">About Me</Link></li>
         <li><Link to="/contact">Contact</Link></li>
       </ul>
+
     </NavbarStyled>
   );
 };

@@ -20,7 +20,7 @@ const Row = styled.div`
 
 const ColumnImage = styled.div`
   flex: 1;
-  max-width: 500px;
+  max-width: 600px;
 
   img {
     width: 100%;
@@ -45,10 +45,13 @@ const Content = styled.div`
     margin-top: 20px;
     color: #f1f1f1;
     font-family: 'Arial', sans-serif;
+
+
   }
 
   p {
-    font-size: 20px;
+    font-size: 18px;
+    font-family:'Montserrat', sans-serif;
     font-weight: 300;
     line-height: 1.8;
     margin-bottom: 20px;
@@ -93,29 +96,18 @@ const About: React.FC = () => {
           <p>
             I'm Kang Shen, a passionate and innovative web designer and developer. My journey in the world of web design started with a deep fascination for how technology can be seamlessly integrated with artistic expression. Over the years, I've honed my skills in creating visually stunning and highly functional websites that not only meet but exceed client expectations.
           </p>
-          <h2>What Drives Me</h2>
+          <h2>Coding Practice</h2>
           <p>
             My approach to web design is rooted in a strong understanding of user experience and a commitment to staying ahead of industry trends. I thrive on challenges and am always eager to learn and implement new technologies to enhance my work. Whether it's through responsive design, intuitive navigation, or engaging content, my goal is to create digital experiences that leave a lasting impact.
           </p>
-          <h2>Skills and Expertise</h2>
+          <h2>Technical Skills</h2>
           <p>
             With a strong foundation in HTML, CSS, and JavaScript, I specialize
             in creating responsive and modern websites. I am well-versed in
             utilizing frameworks like Bootstrap to ensure cross-browser
             compatibility and a consistent design across various devices.
           </p>
-          <h2>My Design Approach</h2>
-          <p>
-            I believe that a website is more than just an online presence; it is a narrative waiting to unfold. I meticulously attend to every detail, ensuring that each element has a purpose and contributes to the overall story.
-          </p>
-          <h2>Professional Journey</h2>
-          <p>
-            Throughout my career, I have had the opportunity to work on a wide range of projects, from personal blogs to e-commerce platforms. These diverse experiences have given me a deep understanding of the web design field, enabling me to approach challenges with creativity and innovation.
-          </p>
-          <h2>Commitment to Growth</h2>
-          <p>
-            Staying current in the ever-evolving field of web design is essential. I am dedicated to continuous learning and keeping up with the latest trends and technologies. Whether it's exploring new design tools or delving into emerging frameworks, I am passionate about expanding my skill set.
-          </p>
+
         </Content>
       </Row>
     </Container>

@@ -26,9 +26,9 @@ const CurrentPageIndicator = styled.div`
 const HeaderImage: React.FC = () => {
   const location = useLocation();
   const currentPage = location.pathname === '/' ? 'Home' :
-                      location.pathname === '/about' ? 'About Me' :
-                      location.pathname === '/contact' ? 'Contact' :
-                      'Unknown';
+    location.pathname === '/about' ? 'About Me' :
+      location.pathname === '/contact' ? 'Contact' :
+        'Unknown';
 
   return (
     <HeaderImageStyled>
