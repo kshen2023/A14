@@ -16,6 +16,7 @@ const SectionStyled = styled.section`
     margin-top: 20px;
     margin-bottom: 20px;
     font-weight: 600;  /* Slightly lighter font weight */
+  
   }
 
   p {
